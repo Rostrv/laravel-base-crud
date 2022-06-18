@@ -27,7 +27,7 @@
         </div>
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
-            <textarea class="form-control @error ('description') is invalid @enderror" name="description" id="description" rows="5" {{$comic->description}}></textarea>
+            <textarea type="text" class="form-control @error ('description') is invalid @enderror" name="description" id="description" rows="5" {{$comic->description}}></textarea>
             @error('description')
             <div class="alert alert-danger">{{$message}}</div>
             @enderror
